@@ -1,0 +1,193 @@
+.App {
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.headColor {
+
+  background-color: #122650;
+
+}
+
+#App-header {
+  font-family: 'Roboto';
+  /* background-color: #122650; */
+  min-height: 7.5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: calc(12px + 2vmin);
+  color: rgb(255, 255, 255);
+  margin-top: 0px;
+  font-weight: 650;
+  margin-left: 5vh;
+}
+
+.HeaderOne {
+  color: #000000;
+  font-weight: 350;
+  margin-bottom: 0;
+  font-size: 31px;
+  font-family: 'Roboto';
+}
+
+.HeaderTwo {
+  color: #000000;
+  font-weight: 350;
+  font-size: 26px;
+  font-family: 'Roboto';
+  margin-bottom: 5%;
+}
+
+.Username {
+  /* margin-left: 30%; */
+  margin-right: 50%;
+  font-family: 'Roboto';
+  margin-bottom: 1%;
+  font-size: 25px;
+  text-align: center;
+}
+
+.Password {
+  margin-right: 50%;
+  font-family: 'Roboto';
+  font-size: 25px;
+  margin-bottom: 10%;
+  text-align: center;
+}
+
+#UsernameText {
+
+  /* margin: auto; */
+}
+
+#PasswordText {
+
+  /* margin: auto; */
+  display: inline-block;
+  text-align: center;
+  /* width: 10px; */
+}
+
+#UsernameInput {
+
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.115em solid #122650;
+  border-radius: 0.25em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 500;
+  text-align: left;
+  width: 55vh;
+  height: 7vh;
+  margin-left: 70%;
+
+}
+
+#PasswordInput {
+
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.115em solid #122650;
+  border-radius: 0.25em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 500;
+  text-align: left;;
+  width: 55vh;
+  height: 7vh;
+  margin-left: 70%;
+}
+
+.LogInFeature {
+  width: 960px;
+  margin: auto;
+  /* margin-left: 30%; */
+  /* margin-right: 30%; */
+  /* margin-top: 20%; */
+  /* margin-bottom: 20%;   */
+}
+
+#SignInButton {
+
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.145em solid #122650;
+  border-radius: 0.25em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  transition: all 0.5s;
+  width: 27.5vh;
+  height: 6vh;
+  margin-right: 2%;
+
+}
+
+#SignInButton:hover {
+  color: #ffffff;
+  background-color: #122650;
+}
+
+#RegisterButton {
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.145em solid #122650;
+  border-radius: 0.25em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  transition: all 0.5s;
+  width: 27.5vh;
+  height: 6vh;
+}
+
+#RegisterButton:hover {
+  color: #ffffff;
+  background-color: #122650;
+}
+
+
+
+@media all and (max-width:30em) {
+  div.button1{
+  display:block;
+  margin:0.4em auto;
+    }
+  }
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
