@@ -121,7 +121,17 @@
   width: 57vh;
   height: 7vh;
   margin: 0;
+  margin-bottom: 1%;
   /* position: absolute; */
+}
+
+#loginStatus {
+
+  /* position: absolute; */
+  /* margin-top: 10%; */
+  text-align: center;
+  margin-left: 5%;
+  font-size: 22px;
 }
 
 .LogInFeature {

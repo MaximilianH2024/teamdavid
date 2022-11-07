@@ -14,7 +14,7 @@ function App() {
 
     <div className="App">
       <div className="headColor">
-        <header id="App-header">Login</header>
+        <header id="App-header">L o g i n</header>
       </div>
       <h1 className="HeaderOne">Welcome! </h1>
       <h2 className="HeaderTwo">Please Login or Register an Account</h2>
@@ -30,6 +30,7 @@ function App() {
             <p id="PasswordText">Password: </p>
             <input type="text" placeholder='Password' id="PasswordInput" ></input>
           </form>
+          {(user)?<div id="loginStatus">Logged in as: {user.user.displayName}</div>:<div id="loginStatus">Currently not logged in</div>}
         </div>
         <div className="LogInFeature">
           <button id="SignInButton"
