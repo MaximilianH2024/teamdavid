@@ -1,9 +1,36 @@
 import React from 'react';
 import './App.css';
 
-import {auth} from "./firebase-config";
+import {auth, db} from "./firebase-config";
 // import {useSignInWithGoogle} from "react-firebase-hooks/auth/dist/auth";
-import {useSignInWithGoogle} from "react-firebase-hooks/auth"
+import {useSignInWithGoogle} from "react-firebase-hooks/auth";
+import {collection} from "firebase/firestore";
+import {useCollection} from "react-firebase-hooks/firestore";
+
+
+function CreateUserInfo() {
+
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const [value, loading, error] = useCollection(collection(db, "userEmails"));
+
+
+  return <div>
+    {(value) ? <div>
+      {value.docs.map((obj) => (
+        <div>
+          <div>Gmail Address: {obj.data().email}</div>
+          <div>Name: {obj.data().name}</div>
+        </div>
+      ))}
+
+
+
+
+
+    </div> : <div>Loading...</div>}
+  </div>
+}
+
 
 function App() {
 
@@ -43,6 +70,9 @@ function App() {
           >  
             Register
           </button>
+        </div>
+        <div>
+          <CreateUserInfo></CreateUserInfo>
         </div>
       </body>
     </div>
